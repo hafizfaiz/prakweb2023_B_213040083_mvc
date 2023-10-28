@@ -20,6 +20,7 @@
               <li class="list-group-item">
                   <?= $mhs['nama']; ?>
                   <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right ml-1" onclick="return confirm ('yakin ?');">Hapus</a>
+                  <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="tampilModalUbah badge badge-success float-right ml-1" data-toggle="modal" data-target="#formModal" data-id="<?= $mhs['id']; ?>">ubah</a>
                   <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right ml-1">detail</a>
               </li>
             <?php endforeach; ?>
